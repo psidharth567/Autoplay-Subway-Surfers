@@ -7,6 +7,11 @@ import os
 from collections import deque
 from datetime import datetime
 
+# Adjust the on-screen location of the subway surfers gameplay here (may require some trial and error) 
+TOP = 0
+LEFT = 0
+WIDTH = 584
+HEIGHT = 1080
 
 def create_directory_structure():
     main_dirs = ['LEFT', 'RIGHT', 'UP', 'DOWN', 'NOTHING']
@@ -77,3 +82,4 @@ def capture_frames():
 
 if __name__ == "__main__":
     capture_frames()
+
