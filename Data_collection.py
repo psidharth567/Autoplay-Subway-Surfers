@@ -32,7 +32,7 @@ def save_frames(frames, action):
 def capture_frames():
     create_directory_structure()
 
-    monitor = {"top": 3, "left": 0, "width": 584, "height": 1080}
+    monitor = {"top": TOP, "left": LEFT, "width": WIDTH, "height": HEIGHT}
     fps = 75
     frame_interval = 10  # Number of frames between each action
     frames_to_capture = 3  # Number of frames to capture per action
@@ -82,4 +82,5 @@ def capture_frames():
 
 if __name__ == "__main__":
     capture_frames()
+
 
